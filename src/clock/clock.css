@@ -1,0 +1,189 @@
+:root {
+    --ff-primary: 'Times New Roman', sans-serif;
+    --ff-secondary: 'Times New Roman', sans-serif;
+    
+    --fs-large: 7.5rem;
+    --fs-date: 3rem;
+    --fs-medium: 5rem;
+    --fs-datesmall: 1.5rem;
+    --fs-small: 2.5rem;
+    --fs-headersmall: 1.2rem;
+    --fs-tiny: .75rem;
+     --fs-tinier: .55rem;
+
+    --background-clr: linear-gradient(180deg, rgba(255, 0, 247, 0.876) 51%, rgba(0, 241, 254, 0.911) 100%);
+}
+
+ .Time {
+        background: var(--background-clr);
+        z-index: 10;
+        margin: 0 auto;
+        position: relative;
+        top: 11rem;
+        width: 35%;
+        border-radius: 2rem;
+        animation: 'box-neon' 5s;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+        box-shadow: .4rem .4rem black;
+        font-family: var(--ff-primary);
+        font-size: var(--fs-small);
+    }
+
+    .time-container {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-large);
+        font-family: var(--ff-primary);
+    }
+
+    .Date {
+         margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-date);
+        font-family: var(--ff-primary);
+        padding: 0 0 1rem 0;
+    }
+    
+@media (min-width: 1000px) and (max-width: 5000px) {
+    .Time {
+        background: var(--background-clr);
+        z-index: 10;
+        margin: 0 auto;
+        position: relative;
+        top: 11rem;
+        width: 45%;
+        border-radius: 2rem;
+        box-shadow: .4rem .4rem black;
+         font-size: var(--fs-small);
+         
+    }
+    
+    .time-container {
+        margin: 0 auto;
+        position: relative;
+        top: .1rem;
+        font-size: var(--fs-large);
+        font-family: var(--ff-primary);
+    }
+
+    .Date {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-date);
+        font-family: var(--ff-primary);
+    }
+
+    
+
+}
+
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .Time {
+        background: var(--background-clr);
+        z-index: 10;
+        margin: 0 auto;
+        position: relative;
+        top: 15rem;
+        width: 58%;
+        border-radius: 2rem;
+        box-shadow: .4rem .4rem black; 
+        font-size: var(--fs-headersmall);
+        font-weight: bolder;
+
+    }
+    
+    .time-container {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-small);
+        font-family: var(--ff-primary);
+    }
+
+    .Date {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-datesmall);
+        font-family: var(--ff-primary);
+        top: .4rem;
+    }
+
+}
+
+
+@media (min-width: 501px) and (max-width: 999px) {
+    .Time {
+        background: var(--background-clr);
+        z-index: 10;
+        margin: 0 auto;
+        position: relative;
+        top: 25rem;
+        width: 55%;
+        border-radius: 2rem;
+        box-shadow: .4rem .4rem black;
+        font-weight: bolder;
+    }
+    
+    .time-container {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-medium);
+        font-family: var(--ff-primary);
+    }
+    
+    .Date {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-datesmall);
+        font-family: var(--ff-primary);
+        top: .4rem;
+    }
+
+}
+
+@media (min-width: 40px) and (max-width: 199px) {
+    .Time {
+        background: var(--background-clr);
+        z-index: 10;
+        margin: 0 auto;
+        position: relative;
+        top: 15rem;
+        border-radius: 2rem;
+        box-shadow: .4rem .4rem black; 
+        font-size: var(--fs-tiny);
+        width: 90%;
+        display: flex;
+        flex-shrink: 4;
+        flex-direction: column;
+        padding: .31rem 0 .31rem 0;
+        font-weight: bolder;
+        
+    }
+    
+    .time-container {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-tiny);
+        font-family: var(--ff-primary);
+        top: .2rem;
+        font-weight: bolder;
+         padding: .45rem 0 .1rem 0;
+    }
+
+    .Date {
+        margin: 0 auto;
+        position: relative;
+        font-size: var(--fs-tinier);
+        font-family: var(--ff-primary);
+        top: .2rem;
+        font-weight: bolder;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: .75rem 0 .41rem 0;
+        font-weight: bolder;
+    }
+
+}
