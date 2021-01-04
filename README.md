@@ -1,5 +1,8 @@
 # Function 
 This application's function is to display the current date and time of the user's timezone using JavaScript and React State. 
+\
+\
+![](/src/pics/readme-pic.png)
 
 # Installation
 1.	Clone the repo [here](https://github.com/uavsystems434/clock-app).
